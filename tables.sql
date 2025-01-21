@@ -5,10 +5,7 @@ CREATE TABLE books (
     author_id INT NOT NULL ,
     isbn VARCHAR(13) UNIQUE NOT NULL,
     publisher_id INT NOT NULL,
-    language_id INT NOT NULL,
-    FOREIGN KEY (author_id) REFERENCES authors (author_id),
-    FOREIGN KEY (publisher_id) REFERENCES publishers (publisher_id),
-    FOREIGN KEY (language_id) REFERENCES languages (language_id)
+    language_id INT NOT NULL
 );
 
 -- ON DELETE CASCADE if we want to delete all books from an author
@@ -52,38 +49,34 @@ CREATE TABLE members (
 
 -- Table: Borrowing
 CREATE TABLE borrowing (
-    -- add availability of the book
     borrowing_id SERIAL PRIMARY KEY,
     member_id SERIAL NOT NULL,
     book_id SERIAL NOT NULL,
+    book_availability BOOLEAN DEFAULT TRUE,
     borrow_date TIMESTAMP DEFAULT (now()),
-    return_date TIMESTAMP NOT NULL NOT NULL CHECK(return_date > borrow_date),
-    FOREIGN KEY (member_id) REFERENCES members (member_id),
-    FOREIGN KEY (book_id) REFERENCES books (book_id)
+    return_date TIMESTAMP NOT NULL NOT NULL CHECK(return_date > borrow_date)
 );
 
 -- Table: BookCategories
 CREATE TABLE book_categories (
   book_id SERIAL,
   category_id SERIAL,
-  PRIMARY KEY (book_id, category_id),
-  FOREIGN KEY (book_id) REFERENCES books (book_id),
-  FOREIGN KEY (category_id) REFERENCES categories (category_id)
+  PRIMARY KEY (book_id, category_id)
 );
 
--- ALTER TABLE books ADD FOREIGN KEY (author_id) REFERENCES authors (author_id);
+ALTER TABLE books ADD FOREIGN KEY (author_id) REFERENCES authors (author_id);
 
--- ALTER TABLE books ADD FOREIGN KEY (publisher_id) REFERENCES publishers (publisher_id);
+ALTER TABLE books ADD FOREIGN KEY (publisher_id) REFERENCES publishers (publisher_id);
 
--- ALTER TABLE books ADD FOREIGN KEY (language_id) REFERENCES languages (language_id);
+ALTER TABLE books ADD FOREIGN KEY (language_id) REFERENCES languages (language_id);
 
--- ALTER TABLE book_categories ADD FOREIGN KEY (book_id) REFERENCES books (book_id);
+ALTER TABLE book_categories ADD FOREIGN KEY (book_id) REFERENCES books (book_id);
 
--- ALTER TABLE book_categories ADD FOREIGN KEY (category_id) REFERENCES categories (category_id);
+ALTER TABLE book_categories ADD FOREIGN KEY (category_id) REFERENCES categories (category_id);
 
--- ALTER TABLE borrowing ADD FOREIGN KEY (member_id) REFERENCES members (member_id);
+ALTER TABLE borrowing ADD FOREIGN KEY (member_id) REFERENCES members (member_id);
 
--- ALTER TABLE borrowing ADD FOREIGN KEY (book_id) REFERENCES books (book_id);
+ALTER TABLE borrowing ADD FOREIGN KEY (book_id) REFERENCES books (book_id);
 
 
 
