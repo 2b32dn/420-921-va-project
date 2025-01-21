@@ -1,6 +1,7 @@
 -- Table: Books
 CREATE TABLE books (
     book_id SERIAL PRIMARY KEY ,
+    book_availability BOOLEAN DEFAULT TRUE,
     title VARCHAR NOT NULL,
     author_id INT NOT NULL ,
     isbn VARCHAR(13) UNIQUE NOT NULL,
@@ -33,7 +34,7 @@ CREATE TABLE languages (
 -- Table: Publishers
 CREATE TABLE publishers (
     publisher_id SERIAL PRIMARY KEY,
-    name VARCHAR UNIQUE NOT NULL,
+    name VARCHAR(50) UNIQUE NOT NULL,
     country VARCHAR(15)
 );
 
@@ -52,7 +53,6 @@ CREATE TABLE borrowing (
     borrowing_id SERIAL PRIMARY KEY,
     member_id SERIAL NOT NULL,
     book_id SERIAL NOT NULL,
-    book_availability BOOLEAN DEFAULT TRUE,
     borrow_date TIMESTAMP DEFAULT (now()),
     return_date TIMESTAMP NOT NULL NOT NULL CHECK(return_date > borrow_date)
 );
