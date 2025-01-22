@@ -4,16 +4,15 @@ CREATE TABLE books (
     book_availability BOOLEAN DEFAULT TRUE,
     title VARCHAR NOT NULL,
     author_id INT NOT NULL ,
-    isbn VARCHAR(13) UNIQUE NOT NULL,
+    isbn VARCHAR(13) NOT NULL,
+    summary TEXT,
     publisher_id INT NOT NULL,
     language_id INT NOT NULL
 );
 
--- ON DELETE CASCADE if we want to delete all books from an author
-
 -- Table: Authors
 CREATE TABLE authors (
-    author_id SERIAL PRIMARY KEY ,
+    author_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     birth_date DATE
@@ -28,7 +27,7 @@ CREATE TABLE categories (
 -- Table: Languages
 CREATE TABLE languages (
     language_id SERIAL PRIMARY KEY,
-    language_name VARCHAR(30) UNIQUE NOT NULL
+    language_name VARCHAR(2) UNIQUE NOT NULL
 );
 
 -- Table: Publishers
@@ -72,7 +71,7 @@ ALTER TABLE books ADD FOREIGN KEY (language_id) REFERENCES languages (language_i
 
 ALTER TABLE book_categories ADD FOREIGN KEY (book_id) REFERENCES books (book_id);
 
-ALTER TABLE book_categories ADD FOREIGN KEY (category_id) REFERENCES categories (category_id);
+ALTER TABLE book_categories ADD FOREIGN KEY (category_id) REFERENCES categories (category_id) ON DELETE CASCADE;
 
 ALTER TABLE borrowing ADD FOREIGN KEY (member_id) REFERENCES members (member_id);
 
