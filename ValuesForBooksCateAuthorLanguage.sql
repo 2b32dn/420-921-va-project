@@ -71,6 +71,12 @@ INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES
 INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('11','The Lord of the Rings: The Fellowship of the Ring','8','9780547928210','7','3');
 INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('12','Brave New World','9','9780060850524','1','3');
 INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('13','The Alchemist','10','9780062315007','8','3');
+INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('14','Moby Dick','5','9781503280786','3','3');
+INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('15','Moby Dick','5','9781503280786','3','3');
+INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('16','Animal Farm','2','9780451526342','2','3');
+INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('17','The Hobbit','8','9780547928227','7','3');
+INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('18','The Hobbit','8','9780547928227','7','3');
+
 
 -- bookCategories
 INSERT INTO bookCategories (book_id,category_id) VALUES ('1','7');
@@ -109,3 +115,17 @@ INSERT INTO bookCategories (book_id,category_id) VALUES ('12','19');
 INSERT INTO bookCategories (book_id,category_id) VALUES ('13','7');
 INSERT INTO bookCategories (book_id,category_id) VALUES ('13','1');
 INSERT INTO bookCategories (book_id,category_id) VALUES ('13','11');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('14','7');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('14','1');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('14','3');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('15','7');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('15','1');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('15','3');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('16','7');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('16','17');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('17','7');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('17','6');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('17','1');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('18','7');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('18','6');
+INSERT INTO bookCategories (book_id,category_id) VALUES ('18','1');
