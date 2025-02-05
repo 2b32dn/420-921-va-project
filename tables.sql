@@ -27,7 +27,7 @@ CREATE TABLE categories (
 -- Table: Languages
 CREATE TABLE languages (
     language_id SERIAL PRIMARY KEY,
-    language_name VARCHAR(2) UNIQUE NOT NULL
+    language_name VARCHAR(20) UNIQUE NOT NULL
 );
 
 -- Table: Publishers
