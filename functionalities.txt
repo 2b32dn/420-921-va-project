@@ -1,0 +1,21 @@
+1.Add a new book.
+2.Register a new member.
+3.Add a borrowing transaction.
+4.Add a category
+5.List all borrowing transactions for a member.
+6.Search for an author’s books.
+7.View all overdue books.
+8.Update member contact information.
+9.Update borrowing return date.
+10.Delete a category
+11.Find the most borrowed books
+12.Calculate total books borrowed by each member.
+13.List available books by category
+14.Find all overdue books
+15.Find the most popular author based on book borrowings
+16.List all members with no borrowing history
+17.Find the least borrowed books
+18.Generate a list of members who borrowed books from specific categories
+19.Calculate the total number of books per language
+20.Find the most popular category based on borrowings
+
