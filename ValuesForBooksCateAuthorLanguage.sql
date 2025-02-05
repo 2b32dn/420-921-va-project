@@ -129,3 +129,46 @@ INSERT INTO book_categories (book_id,category_id) VALUES ('17','1');
 INSERT INTO book_categories (book_id,category_id) VALUES ('18','7');
 INSERT INTO book_categories (book_id,category_id) VALUES ('18','6');
 INSERT INTO book_categories (book_id,category_id) VALUES ('18','1');
+
+-- members
+INSERT INTO members(first_name, last_name, email, phone)
+VALUES
+('John', 'Doe','johndoe@email.com','1-888-168-2888'),
+('Kari','Brooks','kari.brooks@email.com','9-450-510-7435'),
+('Rebecca','Jacobs','rebecca.jacobs@email.com','6-346-105-6927'),
+('Nicholas','Cook','nicholas.cook@email.com','1-590-525-2352'),
+('Christopher','Valencia','christopher.valencia@email.com','2-466-658-6710'),
+('Steven','Flores','steven.flores@email.com','4-671-183-7002'),
+('Brandon','Stevenson','brandon.stevenson@email.com','6-147-448-1782'),
+('Jamie','Clark','jamie.clark@email.com','2-587-596-6055'),
+('Mark','Sullivan','mark.sullivan@email.com','9-603-391-8943'),
+('Jasmine','Bailey','jasmine.bailey@email.com','2-360-452-4952'),
+('Paige','Lloyd','paige.lloyd@email.com','9-641-177-1474'),
+('Ryan','Hays','ryan.hays@email.com','7-911-176-9467'),
+('Joseph','Johnson','joseph.johnson@email.com','6-254-954-2750'),
+('Rachel','Giles','rachel.giles@email.com','1-348-234-9061'),
+('Julie','Obrien','julie.obrien@email.com','1-478-732-9061'),
+('Jeffery','Ortiz','jeffery.ortiz@email.com','1-514-126-9061'),
+('Rachel','Kim','rachel.kim@email.com','1-943-832-9061'),
+('Christian','Bolton','christian.bolton@email.com','1-234-462-9061'),
+('Christopher','Huffman','christopher.huffman@email.com','1-642-862-9061'),
+('Stacey','White','stacey.white@email.com','1-752-234-9061'),
+('Nicole','Garrett','nicole.garrett@email.com','1-123-462-9061'),
+('Jenna','Robles','jenna.robles@email.com','1-478-983-9061'),
+('Kimberly','Hurst','kimberly.hurst@email.com','1-563-652-9061'),
+('Angela','Rivera','angela.rivera@email.com','1-442-138-9061'),
+('Anna','Houston','anna.houston@email.com','1-652-488-9061');
+
+-- borrowing
+INSERT INTO borrowing (borrowing_id, member_id, book_id, borrow_date, return_date)
+VALUES
+('1','1','5', NOW(), NOW() + INTERVAL '7 days'),
+('2','1','2', NOW(), NOW() + INTERVAL '7 days'),
+('3','3','3', NOW(), NOW() + INTERVAL '7 days'),
+('4','4','7', NOW(), NOW() + INTERVAL '7 days'),
+('5','5','11', NOW(), NOW() + INTERVAL '7 days'),
+('6','6','8', NOW(), NOW() + INTERVAL '7 days'),
+('7','7','13', NOW(), NOW() + INTERVAL '7 days'),
+('8','8','4', NOW(), NOW() + INTERVAL '7 days'),
+('9','9','17', NOW(), NOW() + INTERVAL '7 days'),
+('10','10','10', NOW(), NOW() + INTERVAL '7 days');
