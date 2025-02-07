@@ -58,24 +58,24 @@ INSERT INTO languages (language_id,language_name) VALUES ('8','Spanish');
 INSERT INTO languages (language_id,language_name) VALUES ('9','Urdu');
 
 -- books
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('1','To Kill a Mockingbird','1','9780061120084','1','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('2','1984','2','9780451524935','2','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('3','Animal Farm','2','9780451526342','2','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('4','Homage to Catalonia','2','9780156421171','7','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('5','Pride and Prejudice','3','9781503290563','3','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('6','The Great Gatsby','4','9780743273565','4','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('7','Moby Dick','5','9781503280786','3','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('8','War and Peace','6','9780140447934','5','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('9','The Catcher in the Rye','7','9780316769488','6','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('10','The Hobbit','8','9780547928227','7','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('11','The Lord of the Rings: The Fellowship of the Ring','8','9780547928210','7','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('12','Brave New World','9','9780060850524','1','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('13','The Alchemist','10','9780062315007','8','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('14','Moby Dick','5','9781503280786','3','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('15','Moby Dick','5','9781503280786','3','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('16','Animal Farm','2','9780451526342','2','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('17','The Hobbit','8','9780547928227','7','3');
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) VALUES ('18','The Hobbit','8','9780547928227','7','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('1','To Kill a Mockingbird','1','9780061120084', 'A girl in the racially segregated South learns about justice and morality as her father defends a Black man falsely accused of a crime.','1','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('2','1984','2','9780451524935','A dystopian society under totalitarian rule suppresses truth and individuality through surveillance and propaganda.','2','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('3','Animal Farm','2','9780451526342','Farm animals rebel against humans but end up under a dictatorship, mirroring the failures of communism.','2','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('4','Homage to Catalonia','2','9780156421171', 'Orwell’s firsthand account of fighting in the Spanish Civil War, exposing political betrayals.','7','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('5','Pride and Prejudice','3','9781503290563','A witty romance about misunderstandings and social status, centered on Elizabeth Bennet and Mr. Darcy.','3','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('6','The Great Gatsby','4','9780743273565','A wealthy man’s pursuit of a lost love ends in tragedy, highlighting the emptiness of the American Dream.','4','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('7','Moby Dick','5','9781503280786','A captain obsessively hunts a giant whale, symbolizing humanity’s struggle with fate and obsession.','3','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('8','War and Peace','6','9780140447934','A sweeping novel following Russian aristocrats through love, war, and personal growth during the Napoleonic Wars.','5','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('9','The Catcher in the Rye','7','9780316769488','A disillusioned teenager wanders New York, struggling with identity and societal expectations.','6','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('10','The Hobbit','8','9780547928227','A reluctant hobbit embarks on an adventure to reclaim a treasure guarded by a dragon.','7','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('11','The Lord of the Rings: The Fellowship of the Ring','8','9780547928210','A group sets out to destroy a powerful ring to stop an evil lord’s rise.','7','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('12','Brave New World','9','9780060850524','A futuristic society controls people through pleasure, conditioning, and a rigid caste system.','1','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('13','The Alchemist','10','9780062315007','A shepherd follows his dreams, learning about destiny, perseverance, and personal legend.','8','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('14','Moby Dick','5','9781503280786','A captain obsessively hunts a giant whale, symbolizing humanity’s struggle with fate and obsession.','3','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('15','Moby Dick','5','9781503280786','A captain obsessively hunts a giant whale, symbolizing humanity’s struggle with fate and obsession.','3','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('16','Animal Farm','2','9780451526342','Farm animals rebel against humans but end up under a dictatorship, mirroring the failures of communism.','2','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('17','The Hobbit','8','9780547928227','A reluctant hobbit embarks on an adventure to reclaim a treasure guarded by a dragon.','7','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) VALUES ('18','The Hobbit','8','9780547928227','A reluctant hobbit embarks on an adventure to reclaim a treasure guarded by a dragon.','7','3');
 
 
 -- book_categories
