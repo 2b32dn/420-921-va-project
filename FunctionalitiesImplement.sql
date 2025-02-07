@@ -47,7 +47,7 @@ WHERE category_id = 22;
 -- Update member contact information
 UPDATE members
 SET email = "johndoe@hotmail.com"
-WHERE phone = '1-888-168-2888';
+WHERE phone = '1-888-168-2888' AND first_name = "John";
 
 -- Update borrowing return date
 UPDATE borrowing
