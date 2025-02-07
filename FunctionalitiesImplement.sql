@@ -1,8 +1,8 @@
 -- DDL
-ALTER TABLE bookCategories
+ALTER TABLE book_categories
 ALTER COLUMN book_id TYPE integer;
 
-ALTER TABLE bookCategories
+ALTER TABLE book_categories
 ALTER COLUMN category_id TYPE integer;
 
 ALTER TABLE borrowing
@@ -29,9 +29,9 @@ ALTER COLUMN phone TYPE VARCHAR(40);
 INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) 
 VALUES ('19','To Kill a Mockingbird','1','9780061120084','1','3');
 
-INSERT INTO bookCategories (book_id,category_id) VALUES ('19','7');
-INSERT INTO bookCategories (book_id,category_id) VALUES ('19','3');
-INSERT INTO bookCategories (book_id,category_id) VALUES ('19','8');
+INSERT INTO book_categories (book_id,category_id) VALUES ('19','7');
+INSERT INTO book_categories (book_id,category_id) VALUES ('19','3');
+INSERT INTO book_categories (book_id,category_id) VALUES ('19','8');
 
 -- Register a new member
 INSERT INTO members(first_name, last_name, email, phone)
@@ -55,7 +55,7 @@ SET return_date = NOW() + INTERVAL '10 days';
 
 -- 3.Delete
 -- Delete a book
-DELETE FROM bookCategories
+DELETE FROM book_categories
 WHERE book_id = 19;
 
 DELETE FROM books
