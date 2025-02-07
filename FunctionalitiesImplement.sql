@@ -26,8 +26,8 @@ ALTER COLUMN phone TYPE VARCHAR(40);
 
 -- 1. Create
 -- Add a new book
-INSERT INTO books (book_id,title,author_id,isbn,publisher_id,language_id) 
-VALUES ('19','To Kill a Mockingbird','1','9780061120084','1','3');
+INSERT INTO books (book_id,title,author_id,isbn,summary,publisher_id,language_id) 
+VALUES ('19','To Kill a Mockingbird','1','9780061120084', 'A girl in the racially segregated South learns about justice and morality as her father defends a Black man falsely accused of a crime.','1','3');
 
 INSERT INTO book_categories (book_id,category_id) VALUES ('19','7');
 INSERT INTO book_categories (book_id,category_id) VALUES ('19','3');
