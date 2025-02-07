@@ -55,7 +55,7 @@ SET return_date = NOW() + INTERVAL '10 days';
 
 -- 3.Delete
 -- Delete a book
-DELETE FROM book_categories
+DELETE FROM bookCategories
 WHERE book_id = 19;
 
 DELETE FROM books
